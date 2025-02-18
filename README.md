@@ -58,3 +58,7 @@ This repository contains instructions to:
    Execute the following command:
    ```powershell
    wsl --set-default-version 2
+3. **Verify the Version:**  
+   Check your Linux distributions and versions by running:
+   ```powershell
+   wsl --list --verbose
