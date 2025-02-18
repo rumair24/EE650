@@ -69,3 +69,11 @@ This repository contains instructions to:
 6. To set a default distribution run:
    ```powershell
    wsl --setdefault Ubuntu-22.04
+### 3. Complete Linux Distribution Setup
+
+1. **User Setup:**  
+   When Ubuntu 22.04 is launched for the first time, create your Linux user account.
+2. **Update the System:**  
+   It is recommended to update your system:
+   ```bash
+   sudo apt update && sudo apt upgrade
