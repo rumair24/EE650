@@ -44,3 +44,17 @@ This repository contains instructions to:
    Run the following command to install WSL 2 along with the latest Linux kernel and a default Ubuntu 22.04 distribution:
    ```powershell
    wsl --install
+
+3. **Restart Your Computer:**  
+   After installation, you will be prompted to restart.
+
+4. **Launch Ubuntu 22.04:**  
+   Open Ubuntu 22.04 from the Start menu. On the first run, you will be prompted to create a username and password.
+
+### 2. Set WSL 2 as the Default Version
+
+1. **Open PowerShell as Administrator.**
+2. **Set WSL 2 as Default:**  
+   Execute the following command:
+   ```powershell
+   wsl --set-default-version 2
