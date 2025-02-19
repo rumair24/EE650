@@ -31,7 +31,6 @@ This repository contains instructions to:
 ## Prerequisites
 
 - **Operating System:** Windows 11  
-- **Administrator Access:** Required for enabling WSL and installing system updates  
 - **Internet Connection:** Required to download updates and packages
 
 ## Installation Steps
