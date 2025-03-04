@@ -151,6 +151,13 @@ This repository contains instructions to:
                  ros-humble-py-trees-ros-tutorials \
                  ros-humble-py-trees-ros-viewer
 ```
+Test py_trees and py_trees_ros_tutorials github:
+ ```bash
+   # Run Tutorial from py_trees_ros_tutorial
+   ros2 launch py_trees_ros_tutorials tutorial_one_data_gathering_launch.py
+  # View the Behavior Tree with PyTrees Viewer (run in seperate shell)
+   py-trees-tree-viewer
+```
 ## Additional Resources
 
 - [ROS2 Humble Installation (Ubuntu Deb Packages)](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
