@@ -153,10 +153,12 @@ This repository contains instructions to:
 ```
 Test py_trees and py_trees_ros_tutorials:
  ```bash
-   # Run Tutorial from py_trees_ros_tutorial
-   ros2 launch py_trees_ros_tutorials tutorial_one_data_gathering_launch.py
+  # Run py_trees 'action' bahviour demo
+    py-trees-demo-action-behaviour
+  # Run Tutorial from py_trees_ros_tutorial
+    ros2 launch py_trees_ros_tutorials tutorial_one_data_gathering_launch.py
   # View the Behavior Tree with PyTrees Viewer (run in seperate shell)
-   py-trees-tree-viewer
+    py-trees-tree-viewer
 ```
 ## Additional Resources
 
