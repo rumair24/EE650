@@ -151,7 +151,7 @@ This repository contains instructions to:
                  ros-humble-py-trees-ros-tutorials \
                  ros-humble-py-trees-ros-viewer
 ```
-Test py_trees and py_trees_ros_tutorials github:
+Test py_trees and py_trees_ros_tutorials:
  ```bash
    # Run Tutorial from py_trees_ros_tutorial
    ros2 launch py_trees_ros_tutorials tutorial_one_data_gathering_launch.py
