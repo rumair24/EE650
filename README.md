@@ -14,6 +14,7 @@ This guide provides step-by-step instructions to install and configure WSL2 on W
   - [5. Create a ROS2 Workspace](#5-create-a-ros2-workspace)
   - [6. Install YASMIN](#6-install-yasmin)
   - [7. Install Turtlebot3](#7-install-turtlebot3)
+  - [8. Install py_trees](#8-install-py_trees)
 - [Additional Resources](#additional-resources)
 
 ## Overview
@@ -134,7 +135,22 @@ This repository contains instructions to:
    
    # Launch the YASMIN viewer node
    ros2 run yasmin_viewer yasmin_viewer_node
-
+### 8. Install py_trees
+1. py_trees docs: [py_trees documentation](https://py-trees.readthedocs.io/en/devel/index.html)
+2. py_trees github: [py_trees github](https://github.com/splintered-reality/py_trees)
+3. py_trees_ros docs: [py_trees_ros documentation](https://py-trees-ros.readthedocs.io/en/devel/)
+4. py_trees_ros github: [py_trees_ros github](https://github.com/splintered-reality/py_trees_ros)
+5. py_trees_ros_tutorials docs: [py_trees_ros_tutorials documentation](https://py-trees-ros-tutorials.readthedocs.io/en/devel/index.html)
+6. py_trees_ros_tutorials github: [py_trees_ros_tutorials github](https://github.com/splintered-reality/py_trees_ros_tutorials)
+ ```bash
+   # Install py_trees & py_trees_ros
+   sudo apt update
+   sudo apt install ros-humble-py-trees \
+                 ros-humble-py-trees-ros-interfaces \
+                 ros-humble-py-trees-ros \
+                 ros-humble-py-trees-ros-tutorials \
+                 ros-humble-py-trees-ros-viewer
+```
 ## Additional Resources
 
 - [ROS2 Humble Installation (Ubuntu Deb Packages)](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
