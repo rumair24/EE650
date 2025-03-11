@@ -171,26 +171,35 @@ Test py_trees and py_trees_ros_tutorials:
  ```bash
 1. # Navigate to your workspace source directory
 cd ~/ros2_wc/src
+
 # Create a new directory for the py_trees_demo package
 mkdir py_trees_demo
+
 # Create a Python script for the behavior tree
 touch py_trees_demo/first_bt.py
+
 # Make the script executable
 chmod +x py_trees_demo/first_bt.py
+
 # Source the environment 
 source ~/ros2_ws/install/setup.bash
+
 # Run the Python script
 python3 py_trees_demo/first_bt.py
 ```
  ```bash
 2. # Navigate to the ROS2 or your workspace source directory
 cd ~/ros2_wc/src
+
 # Create a Python script for the selector behavior tree
 touch py_trees_demo/selector.py
+
 # Make the script executable
 chmod +x py_trees_demo/selector.py
+
 # Source the environment 
 source ~/ros2_ws/install/setup.bash
+
 # Run the Python script
 python3 py_trees_demo/selector.py
 ```
@@ -198,12 +207,16 @@ python3 py_trees_demo/selector.py
  ```bash
 3. # Navigate to the ROS2 or your workspace source directory
 cd ~/ros2_wc/src
+
 # Create a Python script for the sequence behavior tree
 touch py_trees_demo/sequence.py
+
 # Make the script executable
 chmod +x py_trees_demo/sequence.py
+
 # Source the environment
 source ~/ros2_ws/install/setup.bash
+
 # Run the Python script
 python3 py_trees_demo/sequence.py
 ```
@@ -211,12 +224,16 @@ python3 py_trees_demo/sequence.py
  ```bash
 4. # Navigate to the ROS2 or your workspace source directory
 cd ~/ros2_wc/src
+
 # Create a Python script for the blackboard behavior tree
 touch py_trees_demo/blackboard.py
+
 # Make the script executable
 chmod +x py_trees_demo/blackboard.py
+
 # Source the environment
 source ~/ros2_ws/install/setup.bash
+
 # Run the Python script
 python3 py_trees_demo/blackboard.py
 ```
@@ -301,6 +318,15 @@ colcon build
 # Source the environment
 source install/setup.bash
 ```
+Intall the ROS2 navigation pakage(the Nav2 package)
+```bash
+sudo apt-get install ros-humble-nav2-bringup
+```
+After installing this package, run the simulation using the following command
+```bash
+ros2 launch turtlebot_simulation start_simu.launch.py
+```
+ *Note that the simulation is initially paused. To start it, press the play button located in the bootom-left corner of the user interface.* 
 
 ## Additional Resources
 
