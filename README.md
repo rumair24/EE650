@@ -15,7 +15,7 @@ This guide provides step-by-step instructions to install and configure WSL2 on W
   - [6. Install YASMIN](#6-install-yasmin)
   - [7. Install Turtlebot3](#7-install-turtlebot3)
   - [8. Install py_trees](#8-install-py_trees)
-  - [9. Examples using py_trees](#9-examples-using-py_trees)
+  - [9. BT Examples using py_trees](#9-examples-using-py_trees)
 - [Additional Resources](#additional-resources)
 
 ## Overview
@@ -161,6 +161,13 @@ Test py_trees and py_trees_ros_tutorials:
   # View the Behavior Tree with PyTrees Viewer (run in seperate shell)
     py-trees-tree-viewer
 ```
+
+### 8. BT Examples using py_trees
+  cd ros2_wc/src
+  mkdir py_trees_demo
+  touch py_trees_demo/first_bt.py
+
+
 ## Additional Resources
 
 - [ROS2 Humble Installation (Ubuntu Deb Packages)](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
