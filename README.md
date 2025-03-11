@@ -281,6 +281,7 @@ chmod +x switching_tasks_tree.py
 ```
 
 **Step 3: Modify *setup.py* to Include ROS 2 Nodes**
+
 Before compiling the workspace, modify the setup.py file by adding the following entry points to define the ROS 2 nodes:
 
 ```bash
