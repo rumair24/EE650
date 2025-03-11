@@ -318,11 +318,11 @@ colcon build
 # Source the environment
 source install/setup.bash
 ```
-Intall the ROS2 navigation pakage(the Nav2 package)
+Intall the ROS2 navigation package(the Nav2 package)
 ```bash
 sudo apt-get install ros-humble-nav2-bringup
 ```
-After installing this package, run the simulation using the following command
+After installing this package, run the simulation using the following command:
 ```bash
 ros2 launch turtlebot_simulation start_simu.launch.py
 ```
