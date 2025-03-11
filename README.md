@@ -163,30 +163,55 @@ Test py_trees and py_trees_ros_tutorials:
 ```
 
 ### 9. BT Examples using py_trees
- ```bash
-  cd ros2_wc/src
-  mkdir py_trees_demo
-  touch py_trees_demo/first_bt.py
-  python3 first_bt.py
-```
 
- ```bash
-  cd ros2_wc/src
-  touch py_trees_demo/selector.py
-  python3 selector.py
-```
+1. # Navigate to the ROS2 or your workspace source directory
+cd ros2_wc/src
+# Create a new directory for the py_trees_demo package
+mkdir py_trees_demo
+# Create a Python script for the behavior tree
+touch py_trees_demo/first_bt.py
+# Make the script executable
+chmod +x py_trees_demo/first_bt.py
+# Source the environment 
+source ~/ros2_ws/install/setup.bash
+# Run the Python script
+python3 py_trees_demo/first_bt.py
 
- ```bash
-  cd ros2_wc/src
-  touch py_trees_demo/sequence.py
-  python3 sequence.py
-```
 
- ```bash
-  cd ros2_wc/src
-  touch py_trees_demo/blackboard.py
-  python3 blackboard.py
-```
+2. # Navigate to the ROS2 or your workspace source directory
+cd ros2_wc/src
+# Create a Python script for the selector behavior tree
+touch py_trees_demo/selector.py
+# Make the script executable
+chmod +x py_trees_demo/selector.py
+# Source the environment 
+source ~/ros2_ws/install/setup.bash
+# Run the Python script
+python3 py_trees_demo/selector.py
+
+3. # Navigate to the ROS2 or your workspace source directory
+cd ros2_wc/src
+# Create a Python script for the sequence behavior tree
+touch py_trees_demo/sequence.py
+# Make the script executable
+chmod +x py_trees_demo/sequence.py
+# Source the environment
+source ~/ros2_ws/install/setup.bash
+# Run the Python script
+python3 py_trees_demo/sequence.py
+
+
+4. # Navigate to the ROS2 or your workspace source directory
+cd ros2_wc/src
+# Create a Python script for the blackboard behavior tree
+touch py_trees_demo/blackboard.py
+# Make the script executable
+chmod +x py_trees_demo/blackboard.py
+# Source the environment
+source ~/ros2_ws/install/setup.bash
+# Run the Python script
+python3 py_trees_demo/blackboard.py
+
 
 ## Additional Resources
 
