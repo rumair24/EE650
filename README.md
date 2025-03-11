@@ -162,11 +162,12 @@ Test py_trees and py_trees_ros_tutorials:
     py-trees-tree-viewer
 ```
 
-### 8. BT Examples using py_trees
+### 9. BT Examples using py_trees
+ ```bash
   cd ros2_wc/src
   mkdir py_trees_demo
   touch py_trees_demo/first_bt.py
-
+```
 
 ## Additional Resources
 
