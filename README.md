@@ -17,6 +17,8 @@ This guide provides step-by-step instructions to install and configure WSL2 on W
   - [8. Install py_trees](#8-install-py_trees)
   - [9. BT Examples using py_trees](#9-examples-using-py_trees)
   - [10. Integrating ROS2 with py_trees](#10-integrating-ros2-with-py_trees)
+  - [11. Simulate TurtleBot using BT](#11-simulate-turtlebot-using-bt)
+
 
 - [Additional Resources](#additional-resources)
 
@@ -282,6 +284,23 @@ ros2 run battery_checker_exec switching_tasks
 ros2 run battery_checker_exec battery_manager
 ```
 
+### 11. Simulate TurtleBot using BT
+```bash
+# Navigate to your ROS 2 workspace source directory
+cd ~/ros2_wc/src
+
+# Clone the repository from GitHub
+git clone https://github.com/afaroo01/turtlebot_simulation.git
+
+# Navigate back to the workspace root
+cd ~/ros2_wc
+
+# Build the package
+colcon build
+
+# Source the environment
+source install/setup.bash
+```
 
 ## Additional Resources
 
