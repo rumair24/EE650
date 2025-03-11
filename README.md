@@ -16,6 +16,8 @@ This guide provides step-by-step instructions to install and configure WSL2 on W
   - [7. Install Turtlebot3](#7-install-turtlebot3)
   - [8. Install py_trees](#8-install-py_trees)
   - [9. BT Examples using py_trees](#9-examples-using-py_trees)
+  - [10. Integrating ROS2 with py_trees](#10-integrating-ros2-with-py_trees)
+
 - [Additional Resources](#additional-resources)
 
 ## Overview
@@ -165,8 +167,8 @@ Test py_trees and py_trees_ros_tutorials:
 ### 9. BT Examples using py_trees
 
  ```bash
-1. # Navigate to the ROS2 or your workspace source directory
-cd ros2_wc/src
+1. # Navigate to your workspace source directory
+cd ~/ros2_wc/src
 # Create a new directory for the py_trees_demo package
 mkdir py_trees_demo
 # Create a Python script for the behavior tree
@@ -180,7 +182,7 @@ python3 py_trees_demo/first_bt.py
 ```
  ```bash
 2. # Navigate to the ROS2 or your workspace source directory
-cd ros2_wc/src
+cd ~/ros2_wc/src
 # Create a Python script for the selector behavior tree
 touch py_trees_demo/selector.py
 # Make the script executable
@@ -193,7 +195,7 @@ python3 py_trees_demo/selector.py
 
  ```bash
 3. # Navigate to the ROS2 or your workspace source directory
-cd ros2_wc/src
+cd ~/ros2_wc/src
 # Create a Python script for the sequence behavior tree
 touch py_trees_demo/sequence.py
 # Make the script executable
@@ -206,7 +208,7 @@ python3 py_trees_demo/sequence.py
 
  ```bash
 4. # Navigate to the ROS2 or your workspace source directory
-cd ros2_wc/src
+cd ~/ros2_wc/src
 # Create a Python script for the blackboard behavior tree
 touch py_trees_demo/blackboard.py
 # Make the script executable
@@ -216,6 +218,89 @@ source ~/ros2_ws/install/setup.bash
 # Run the Python script
 python3 py_trees_demo/blackboard.py
 ```
+### 10. Integrating ROS2 with py_trees
+In this example, we will implement the following scenario: A robot must navigate towards a target. However, it has a battery that needs to be managed. If the battery level is lower than a certain threshold, the robot must navigate towards the charging station. Here, we are implementing the navigation function, but only the tree that commands the robot to move towards the target or an imagonary charging station. 
+
+Hints: The robot's battery and its dischargine are emulated using a ROS2 node, and the battery level is shared using a topic. The tree program reads the battery level from the topic and, based on its level. decides what to do. 
+
+Lets creas a ROS2 package to implement the battery emulator and the BT:
+
+ros2 pkg create battery_cheacker_exec --build-type ament_python --dependencies rclpy sensors_msgs std_msgs py_trees
+colcon_cd battery_cheacker_exec
+cd battery_checker_exec
+touch battery_manager.py
+
+colcon_cd battery_cheacker_exec
+cd battery_checker_exec
+touch switching_tasks_tree.py
+
+Before compiling the workspace, we can modify the setup.py file by adding two ROS2 nodes
+
+entry_points={
+  'consolde_scripts':[
+          'battery_manager = battery_checker_exec.battery_manager:main',
+          'switching_tasks = battery_checker_exec.switching_tasks_tree:main',
+  ],
+},
+ros2 run battery_cheacker_exec switching_tasks
+ros2 run battery_cheacker_exec battery_manager
+
+
+### 10. Integrating ROS2 with py_trees
+
+In this example, we will implement the following scenario:  
+A robot must navigate towards a target. However, it has a battery that needs to be managed. If the battery level drops below a certain threshold, the robot must navigate to a charging station. Here, we are implementing the navigation function, but only the behavior tree (BT) that commands the robot to move towards the target or an imaginary charging station.
+
+#### Hints:  
+The robot's battery and its discharge process are emulated using a ROS 2 node, and the battery level is shared using a topic. The behavior tree program reads the battery level from the topic and, based on its level, decides what to do.
+
+---
+
+### Creating a ROS 2 Package for the Battery Emulator and Behavior Tree
+
+**Step 1: Create a ROS 2 Package** 
+```bash
+# Create a ROS 2 package with dependencies
+ros2 pkg create battery_checker_exec --build-type ament_python --dependencies rclpy sensor_msgs std_msgs py_trees
+
+# Navigate to the package directory
+colcon_cd battery_checker_exec
+cd battery_checker_exec
+
+**Step 2: Create the Python Scripts**
+# Create the battery manager script
+touch battery_manager.py
+
+# Make the script executable
+chmod +x battery_manager.py
+
+# Create the behavior tree script
+touch switching_tasks_tree.py
+
+# Make the script executable
+chmod +x switching_tasks_tree.py
+
+**Step 3: Modify setup.py to Include ROS 2 Nodes**
+Before compiling the workspace, modify the setup.py file by adding the following entry points to define the ROS 2 nodes:
+
+entry_points={
+  'console_scripts': [
+      'battery_manager = battery_checker_exec.battery_manager:main',
+      'switching_tasks = battery_checker_exec.switching_tasks_tree:main',
+  ],
+},
+
+**Step 4: Source the Environment and Run the Nodes**
+# Source the ROS 2 environment
+source ~/ros2_ws/install/setup.bash
+
+# Run the behavior tree node
+ros2 run battery_checker_exec switching_tasks
+
+# Run the battery manager node
+ros2 run battery_checker_exec battery_manager
+
+
 
 ## Additional Resources
 
