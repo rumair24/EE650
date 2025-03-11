@@ -167,6 +167,25 @@ Test py_trees and py_trees_ros_tutorials:
   cd ros2_wc/src
   mkdir py_trees_demo
   touch py_trees_demo/first_bt.py
+  python3 first_bt.py
+```
+
+ ```bash
+  cd ros2_wc/src
+  touch py_trees_demo/selector.py
+  python3 selector.py
+```
+
+ ```bash
+  cd ros2_wc/src
+  touch py_trees_demo/sequence.py
+  python3 sequence.py
+```
+
+ ```bash
+  cd ros2_wc/src
+  touch py_trees_demo/blackboard.py
+  python3 blackboard.py
 ```
 
 ## Additional Resources
