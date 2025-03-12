@@ -170,7 +170,7 @@ Test py_trees and py_trees_ros_tutorials:
 
  ```bash
 1. # Navigate to your workspace source directory
-cd ~/ros2_wc/src
+cd ros2_wc/src or cd ~/ros2_wc/src 
 
 # Create a new directory for the py_trees_demo package
 mkdir py_trees_demo
@@ -189,7 +189,7 @@ python3 py_trees_demo/first_bt.py
 ```
  ```bash
 2. # Navigate to the ROS2 or your workspace source directory
-cd ~/ros2_wc/src
+cd ros2_wc/src or cd ~/ros2_wc/src 
 
 # Create a Python script for the selector behavior tree
 touch py_trees_demo/selector.py
@@ -206,7 +206,7 @@ python3 py_trees_demo/selector.py
 
  ```bash
 3. # Navigate to the ROS2 or your workspace source directory
-cd ~/ros2_wc/src
+cd ros2_wc/src or cd ~/ros2_wc/src 
 
 # Create a Python script for the sequence behavior tree
 touch py_trees_demo/sequence.py
@@ -223,7 +223,7 @@ python3 py_trees_demo/sequence.py
 
  ```bash
 4. # Navigate to the ROS2 or your workspace source directory
-cd ~/ros2_wc/src
+cd ros2_wc/src or cd ~/ros2_wc/src
 
 # Create a Python script for the blackboard behavior tree
 touch py_trees_demo/blackboard.py
