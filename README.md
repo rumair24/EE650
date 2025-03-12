@@ -327,7 +327,7 @@ colcon build
 # Source the environment
 source install/setup.bash
 ```
-Intall the ROS2 navigation package(the Nav2 package)
+Install the ROS2 navigation package(the Nav2 package)
 ```bash
 sudo apt-get install ros-humble-nav2-bringup
 ```
