@@ -337,6 +337,14 @@ ros2 launch turtlebot_simulation start_simu.launch.py
 ```
  *Note that the simulation is initially paused. To start it, press the play button located in the bottom-left corner of the user interface.* 
 
+##TO DO TASK## 
+To incorporate BT in your launch file, you need to:
+
+1. Create a BT XML file to define behaviors.
+2. Write a ROS 2 node to execute the BT.
+3. Integrate this node into the launch file.
+4. Modify the BT to interact with the Nav2 stack for navigation tasks.
+
 ## Additional Resources
 
 - [ROS2 Humble Installation (Ubuntu Deb Packages)](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
