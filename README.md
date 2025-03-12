@@ -335,7 +335,7 @@ After installing this package, run the simulation using the following command:
 ```bash
 ros2 launch turtlebot_simulation start_simu.launch.py
 ```
- *Note that the simulation is initially paused. To start it, press the play button located in the bootom-left corner of the user interface.* 
+ *Note that the simulation is initially paused. To start it, press the play button located in the bottom-left corner of the user interface.* 
 
 ## Additional Resources
 
