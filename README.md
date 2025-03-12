@@ -344,3 +344,12 @@ ros2 launch turtlebot_simulation start_simu.launch.py
 - [Turtlesim Tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim.html)
 - [YASMIN GitHub Repository](https://github.com/uleroboticsgroup/yasmin?tab=readme-ov-file)
 - [ROS2 Turtlebot3 Tutorial](https://ros2-industrial-workshop.readthedocs.io/en/latest/_source/navigation/ROS2-Turtlebot.html)
+- 
+
+'''bash
+sudo apt update      # Updates package lists (but does not install updates)
+sudo apt upgrade -y  # Installs available updates for installed packages
+sudo apt full-upgrade -y  # Upgrades packages, removing obsolete dependencies if needed
+sudo apt autoremove -y  # Removes unnecessary packages
+sudo apt clean       # Clears local package cache to free up space
+'''
