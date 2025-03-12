@@ -346,10 +346,11 @@ ros2 launch turtlebot_simulation start_simu.launch.py
 - [ROS2 Turtlebot3 Tutorial](https://ros2-industrial-workshop.readthedocs.io/en/latest/_source/navigation/ROS2-Turtlebot.html)
 - 
 
-'''bash
+```bash
+
 sudo apt update      # Updates package lists (but does not install updates)
 sudo apt upgrade -y  # Installs available updates for installed packages
 sudo apt full-upgrade -y  # Upgrades packages, removing obsolete dependencies if needed
 sudo apt autoremove -y  # Removes unnecessary packages
 sudo apt clean       # Clears local package cache to free up space
-'''
+```
