@@ -184,7 +184,7 @@ chmod +x py_trees_demo/first_bt.py
 # Source the environment 
 source ~/ros2_ws/install/setup.bash
 
-# Run the Python script
+# Run the Python script from the src folder
 python3 py_trees_demo/first_bt.py
 ```
  ```bash
@@ -200,7 +200,7 @@ chmod +x py_trees_demo/selector.py
 # Source the environment 
 source ~/ros2_ws/install/setup.bash
 
-# Run the Python script
+# Run the Python script from the src folder
 python3 py_trees_demo/selector.py
 ```
 
@@ -217,7 +217,7 @@ chmod +x py_trees_demo/sequence.py
 # Source the environment
 source ~/ros2_ws/install/setup.bash
 
-# Run the Python script
+# Run the Python script from the src folder
 python3 py_trees_demo/sequence.py
 ```
 
@@ -234,7 +234,7 @@ chmod +x py_trees_demo/blackboard.py
 # Source the environment
 source ~/ros2_ws/install/setup.bash
 
-# Run the Python script
+# Run the Python script from the src folder
 python3 py_trees_demo/blackboard.py
 ```
 
