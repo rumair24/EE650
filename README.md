@@ -343,8 +343,8 @@ ros2 launch turtlebot_simulation start_simu.launch.py
 - [Creating a ROS2 Workspace](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html)
 - [Turtlesim Tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim.html)
 - [YASMIN GitHub Repository](https://github.com/uleroboticsgroup/yasmin?tab=readme-ov-file)
-- [ROS2 Turtlebot3 Tutorial](https://ros2-industrial-workshop.readthedocs.io/en/latest/_source/navigation/ROS2-Turtlebot.html)
-- 
+- [ROS2 Learning Guide](https://github.com/rumair24/EE650/raw/main/ROS2%20Learning.pdf)
+
 
 ```bash
 
