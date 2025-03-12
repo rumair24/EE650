@@ -337,7 +337,7 @@ ros2 launch turtlebot_simulation start_simu.launch.py
 ```
  *Note that the simulation is initially paused. To start it, press the play button located in the bottom-left corner of the user interface.* 
 
-##TO DO TASK## 
+**TO DO TASK** 
 To incorporate BT in your launch file, you need to:
 
 1. Create a BT XML file to define behaviors.
