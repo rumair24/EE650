@@ -252,8 +252,13 @@ The robot's battery and its discharge process are emulated using a ROS 2 node, a
 
 ![BT Navigation Task](BT%20Navigation%20Task.jpg)
 
+### OPTION 1: Git clone Package for the Battery Emulator and Behavior Tree
 
-### Creating a ROS 2 Package for the Battery Emulator and Behavior Tree
+Git clone the package [Battery Checker Exec]([https://github.com/afaroo01/battery_checker_exec.git].
+
+
+
+### OPTION 2: Creating a ROS 2 Package for the Battery Emulator and Behavior Tree
 
 **Step 1: Create a ROS 2 Package** 
 ```bash
