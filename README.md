@@ -1,6 +1,6 @@
-# Ubuntu 22.04 WSL2, ROS2 Humble, YASMIN, and Turtlebot3 Installation Guide
+# Ubuntu 22.04 WSL2, ROS2 Humble, YASMIN, and Turtlebot3 Installation Guide with FSM, BT, and Planning
 
-This guide provides step-by-step instructions to install and configure WSL2 on Windows 11, set up Ubuntu 22.04, and install ROS2 Humble along with YASMIN and Turtlebot3. Use this as a reference to quickly set up your development environment.
+This guide provides step-by-step instructions for installing and configuring WSL2 on Windows 11, setting up Ubuntu 22.04, and installing ROS2 Humble, YASMIM, and TurtleBot3 with FSM, BT, and Planning. Use it as a reference to quickly set up your development environment.
 
 ## Table of Contents
 
