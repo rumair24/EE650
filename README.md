@@ -346,7 +346,8 @@ To add BT to your launch file, you need to:
 3. Integrate this node into the launch file.
 4. Modify the BT to interact with the Nav2 stack for navigation tasks.
 
-*see Turtlebot with BTs.txt for hints*
+*See the [Turtlebot with BTs.txt](./docs/Turtlebot%20with%20BTs.txt) file for hints*.
+
 
 ## Additional Resources
 
