@@ -18,7 +18,7 @@ This guide provides step-by-step instructions for installing and configuring WSL
   - [9. BT Examples using py_trees](#9-examples-using-py_trees)
   - [10. Integrating ROS2 with py_trees](#10-integrating-ros2-with-py_trees)
   - [11. Simulate TurtleBot with BTs](#11-simulate-turtlebot-with-bts)
-
+  - [12. Install PlanSys2 for Planning](#12-install-plansys2-for-planning)
 
 - [Additional Resources](#additional-resources)
 
@@ -32,6 +32,7 @@ This repository contains instructions to:
 - Create a ROS2 workspace and run Turtlesim.
 - Install YASMIN from GitHub and run demo applications.
 - Set up and test Turtlebot3, including keyboard control and custom FSM scripts.
+- Install PlanSys2 for planning tasks in ROS2.
 
 ## Prerequisites
 
@@ -347,6 +348,33 @@ To add BT to your launch file, you need to:
 4. Modify the BT to interact with the Nav2 stack for navigation tasks.
 
 *See the [Turtlebot with BTs.txt](./docs/Turtlebot%20with%20BTs.txt) file for hints*.
+
+
+### 12. Install and Set Up Plansys
+
+```bash
+# Navigate to your ROS 2 workspace source directory
+cd ~/ros2_ws/src
+
+# Clone the Plansys repository from GitHub
+git clone https://github.com/Plansys/ros2_plansys.git
+
+# Navigate back to the workspace root
+cd ~/ros2_ws
+
+# Build the package
+colcon build
+
+# Source the environment
+source install/setup.bash
+
+# Verify the installation by checking available nodes
+ros2 node list
+
+# Run a sample Plansys planner
+ros2 run plansys planner_node
+```
+
 
 
 ## Additional Resources
