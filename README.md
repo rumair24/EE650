@@ -521,4 +521,5 @@ sudo apt upgrade -y  # Installs available updates for installed packages
 sudo apt full-upgrade -y  # Upgrades packages, removing obsolete dependencies if needed
 sudo apt autoremove -y  # Removes unnecessary packages
 sudo apt clean       # Clears local package cache to free up space
+rosdep install --from-paths src --ignore-src -r -y
 ```
