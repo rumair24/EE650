@@ -357,7 +357,7 @@ To add BT to your launch file, you need to:
 **Install the PlanSys2 package**  
 
 ```bash
-sudo apt install ros-<humble-plansys2-*
+sudo apt install ros-humble-plansys2-*
 ```
 
 **Step 1:Clone the PlanSys2 examples and Build the workspace**
