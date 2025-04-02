@@ -360,6 +360,44 @@ To add BT to your launch file, you need to:
 sudo apt install ros-humble-plansys2-*
 ```
 
+**Example 1: Terminal Usage for PlanSys2**
+
+
+**Step 1: Download a simple PDDL domain for this tutorial**
+```bash
+wget -P /tmp https://raw.githubusercontent.com/IntelligentRoboticsLabs/ros2_planning_system_examples/master/plansys2_simple_example/pddl/simple_example.pddl
+```
+
+**Step 2: Launch PlanSys2**
+```bash
+ros2 launch plansys2_bringup plansys2_bringup_launch_distributed.py model_file:=/tmp/simple_example.pddl
+```
+
+**Step 3: Execute PlanSys2 terminal**
+```bash
+ros2 run plansys2_terminal plansys2_terminal
+```
+
+**Step 3: Interacting with PlanSys2 in terminal**
+```bash
+get domain
+```
+```bash
+get model types
+```
+```bash
+get model actions
+```
+```bash
+get model predicates
+```
+```bash
+get model predicate robot_at
+```
+*For more details: [Getting started with PLansys2]([(https://plansys2.github.io/tutorials/docs/terminal_usage.html)].*
+
+**Example 2: Creating a Planning Package**
+
 **Step 1:Clone the PlanSys2 examples and Build the workspace**
 
 ```bash
