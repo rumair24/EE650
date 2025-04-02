@@ -398,7 +398,7 @@ get model predicate robot_at
 
 **Example 2: Creating a Planning Package**
 
-**Step 1:Clone the PlanSys2 examples and Build the workspace**
+**Step 1: Clone the PlanSys2 examples and Build the workspace**
 
 ```bash
 # Create new workspace
@@ -423,17 +423,17 @@ colcon build --symlink-install
 source install/setup.bash
 ```
 
-**Step 2:Open a new terminal and run PlanSys2**
+**Step 2: Open a new terminal and run PlanSys2**
 ```bash
 ros2 launch plansys2_simple_example plansys2_simple_example_launch.py
 ```
 
-**Step 3:Open a new terminal and run PlanSys2**
+**Step 3: Open a new terminal and run PlanSys2**
 ```bash
 ros2 run plansys2_terminal plansys2_terminal
 ```
 
-**Step 4:Open a new terminal and run PlanSys2**
+**Step 4: Open a new terminal and run PlanSys2**
 ```bash
 set instance leia robot
 set instance entrance room
@@ -465,12 +465,37 @@ set predicate (robot_at leia entrance)
 set goal (and(robot_at leia bathroom))
 ```
 
-**Step 3:In the same PlanSys2 terminal shell, get the plan and/or run the plan**
+**Step 3: In the same PlanSys2 terminal shell, get the plan and/or run the plan**
 ```bash
 get plan
 run
 ```
 
+**Example 3: A Planning Controller**
+```bash
+# Navigate back to the workspace root
+cd ~/plansys2_ws
+
+# Source the environment
+source install/setup.bash
+```
+**Step 1: Open a new terminal and run:**
+
+```bash
+ros2 launch plansys2_patrol_navigation_example patrol_example_fakesim_launch.py
+```
+
+**Step 2: Open another terminal and run:**
+
+```bash
+ros2 run plansys2_patrol_navigation_example patrolling_controller_node
+```
+
+**Example 4: Moving a Robot with Nav2**
+
+**TO DO TASK** 
+
+*For more details see: [Running the example with Nav2]([(https://plansys2.github.io/tutorials/docs/controller_example.html)].*
 
 ## Additional Resources
 
