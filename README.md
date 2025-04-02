@@ -18,7 +18,7 @@ This guide provides step-by-step instructions for installing and configuring WSL
   - [9. BT Examples using py_trees](#9-examples-using-py_trees)
   - [10. Integrating ROS2 with py_trees](#10-integrating-ros2-with-py_trees)
   - [11. Simulate TurtleBot with BTs](#11-simulate-turtlebot-with-bts)
-  - [12. Installing and Using Plansys2](#12-install-plansys2-for-planning)
+  - [12. Installing and Using PlanSys2 for Planning](#12-installing-and-using-plansys2-for-planning)
 
 - [Additional Resources](#additional-resources)
 
@@ -352,7 +352,7 @@ To add BT to your launch file, you need to:
 *See the [Turtlebot with BTs.txt](./docs/Turtlebot%20with%20BTs.txt) file for hints*.
 
 
-### 12. Installing and Using Plansys2
+### 12. Installing and Using PlanSys2 for Planning
 
 **Install the PlanSys2 package**  
 
@@ -491,11 +491,18 @@ ros2 launch plansys2_patrol_navigation_example patrol_example_fakesim_launch.py
 ros2 run plansys2_patrol_navigation_example patrolling_controller_node
 ```
 
-**Example 4: Moving a Robot with Nav2**
+**Example 4: PlanSys2 Multidomain Example**
+
+*For more details: [Plansys2 Multidomain Example on GitHub][(https://github.com/PlanSys2/ros2_planning_system_examples/tree/rolling/plansys2_multidomain_example)].*
+
+
+
+
+**Example 5: Moving a Robot with Nav2**
 
 **TO DO TASK** 
 
-*For more details see: [Running the example with Nav2]([(https://plansys2.github.io/tutorials/docs/controller_example.html)].*
+*For details see: [Running the example with Nav2]([(https://plansys2.github.io/tutorials/docs/controller_example.html)].*
 
 ## Additional Resources
 
