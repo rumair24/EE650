@@ -352,29 +352,75 @@ To add BT to your launch file, you need to:
 
 ### 12. Install and Set Up Plansys
 
+**Step 1:Clone the PlanSys2 examples and Build the workspace**
+
 ```bash
 # Navigate to your ROS 2 workspace source directory
-cd ~/ros2_ws/src
+cd ~/plansys2_ws/src
 
-# Clone the Plansys repository from GitHub
-git clone https://github.com/Plansys/ros2_plansys.git
+# Clone the PlanSys2 examples repository from GitHub
+git clone -b humble https://github.com/IntelligentRoboticsLabs/ros2_planning_system_examples.git src
 
 # Navigate back to the workspace root
-cd ~/ros2_ws
+cd ~/plansys2_ws
 
-# Build the package
-colcon build
+# Install dependencies
+rosdep install --from-paths src --ignore-src -r -y
+
+# Build the packages
+colcon build --symlink-install
 
 # Source the environment
 source install/setup.bash
-
-# Verify the installation by checking available nodes
-ros2 node list
-
-# Run a sample Plansys planner
-ros2 run plansys planner_node
 ```
 
+**Step 2:Open a new terminal and run PlanSys2**
+```bash
+ros2 launch plansys2_simple_example plansys2_simple_example_launch.py
+```
+
+**Step 3:Open a new terminal and run PlanSys2**
+```bash
+ros2 run plansys2_terminal plansys2_terminal
+```
+
+**Step 4:Open a new terminal and run PlanSys2**
+```bash
+set instance leia robot
+set instance entrance room
+set instance kitchen room
+set instance bedroom room
+set instance dinning room
+set instance bathroom room
+set instance chargingroom room
+
+set predicate (connected entrance dinning)
+set predicate (connected dinning entrance)
+
+set predicate (connected dinning kitchen)
+set predicate (connected kitchen dinning)
+
+set predicate (connected dinning bedroom)
+set predicate (connected bedroom dinning)
+
+set predicate (connected bathroom bedroom)
+set predicate (connected bedroom bathroom)
+
+set predicate (connected chargingroom kitchen)
+set predicate (connected kitchen chargingroom)
+
+set predicate (charging_point_at chargingroom)
+set predicate (battery_low leia)
+set predicate (robot_at leia entrance)
+
+set goal (and(robot_at leia bathroom))
+```
+
+**Step 3:In the same PlanSys2 terminal shell, get the plan and/or run the plan**
+```bash
+get plan
+run
+```
 
 
 ## Additional Resources
@@ -384,7 +430,7 @@ ros2 run plansys planner_node
 - [Turtlesim Tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim.html)
 - [YASMIN GitHub Repository](https://github.com/uleroboticsgroup/yasmin?tab=readme-ov-file)
 - [ROS2 Learning Guide](https://github.com/rumair24/EE650/raw/main/ROS2%20Learning.pdf)
-
+- [PlanSys2]([https://github.com/rumair24/EE650/raw/main/ROS2%20Learning.pdf](https://plansys2.github.io/getting_started/index.html))
 
 ```bash
 
