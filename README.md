@@ -18,7 +18,7 @@ This guide provides step-by-step instructions for installing and configuring WSL
   - [9. BT Examples using py_trees](#9-examples-using-py_trees)
   - [10. Integrating ROS2 with py_trees](#10-integrating-ros2-with-py_trees)
   - [11. Simulate TurtleBot with BTs](#11-simulate-turtlebot-with-bts)
-  - [12. Install PlanSys2 for Planning](#12-install-plansys2-for-planning)
+  - [12. Installing and Using Plansys2](#12-install-plansys2-for-planning)
 
 - [Additional Resources](#additional-resources)
 
@@ -352,7 +352,7 @@ To add BT to your launch file, you need to:
 *See the [Turtlebot with BTs.txt](./docs/Turtlebot%20with%20BTs.txt) file for hints*.
 
 
-### 12. Install and Set Up Plansys
+### 12. Installing and Using Plansys2
 
 **Install the PlanSys2 package**  
 
@@ -504,7 +504,7 @@ ros2 run plansys2_patrol_navigation_example patrolling_controller_node
 - [Turtlesim Tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim.html)
 - [YASMIN GitHub Repository](https://github.com/uleroboticsgroup/yasmin?tab=readme-ov-file)
 - [ROS2 Learning Guide](https://github.com/rumair24/EE650/raw/main/ROS2%20Learning.pdf)
-- [PlanSys2]([https://github.com/rumair24/EE650/raw/main/ROS2%20Learning.pdf](https://plansys2.github.io/getting_started/index.html))
+- [PlanSys2](https://plansys2.github.io/getting_started/index.html)
 
 ```bash
 
