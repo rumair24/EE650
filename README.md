@@ -261,11 +261,7 @@ Git clone the package [Battery Checker Exec]([https://github.com/afaroo01/batter
 
 ### OPTION 2: Creating a ROS 2 Package for the Battery Emulator and Behavior Tree
 
-**Install the PlanSys2**  
 
-```bash
-sudo apt install ros-<humble-plansys2-*
-```
 
 **Step 1: Create a ROS 2 Package** 
 ```bash
@@ -357,6 +353,12 @@ To add BT to your launch file, you need to:
 
 
 ### 12. Install and Set Up Plansys
+
+**Install the PlanSys2 package**  
+
+```bash
+sudo apt install ros-<humble-plansys2-*
+```
 
 **Step 1:Clone the PlanSys2 examples and Build the workspace**
 
