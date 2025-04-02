@@ -502,7 +502,10 @@ ros2 run plansys2_patrol_navigation_example patrolling_controller_node
 
 **TO DO TASK** 
 
+
 *For details see: [Running the example with Nav2]([(https://plansys2.github.io/tutorials/docs/controller_example.html)].*
+
+Scroll down to 4- Running the example with Nav2
 
 ## Additional Resources
 
