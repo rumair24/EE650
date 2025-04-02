@@ -512,7 +512,8 @@ ros2 run plansys2_patrol_navigation_example patrolling_controller_node
 - [YASMIN GitHub Repository](https://github.com/uleroboticsgroup/yasmin?tab=readme-ov-file)
 - [ROS2 Learning Guide](https://github.com/rumair24/EE650/raw/main/ROS2%20Learning.pdf)
 - [PlanSys2](https://plansys2.github.io/getting_started/index.html)
-- [Example for Turtlesim](https://gitlab.liu.se/lrs2/lrs_plansys2) 
+- [Example for Turtlesim](https://gitlab.liu.se/lrs2/lrs_plansys2)
+- [Introduction to PDDL](https://www.cs.toronto.edu/~sheila/2542/w09/A1/introtopddl2.pdf)
 
 ```bash
 
