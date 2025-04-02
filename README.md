@@ -355,6 +355,9 @@ To add BT to your launch file, you need to:
 **Step 1:Clone the PlanSys2 examples and Build the workspace**
 
 ```bash
+# Create new workspace
+mkdir -p ~/plansys2_ws/src
+
 # Navigate to your ROS 2 workspace source directory
 cd ~/plansys2_ws/src
 
