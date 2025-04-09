@@ -511,6 +511,7 @@ Scroll down to 4- Running the example with Nav2
 *For details see: [Implement actions as Behavior Trees](https://plansys2.github.io/tutorials/docs/bt_actions.html).*
 
 
+
 ## Additional Resources
 
 - [ROS2 Humble Installation (Ubuntu Deb Packages)](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
